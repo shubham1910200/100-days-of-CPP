@@ -23,14 +23,20 @@ HelloHi*/
 using namespace std;
 int main()
 {
-    string s1,s2,result;
-    cout<<"Enter the first String"<<endl;
-    getline(cin,s1);
-    cout<<"Enter the Second String"<<endl;
-    getline(cin,s2);
+    // string s1,s2,result;
+    char s1[100],s2[100];
 
-    result = s1 +s2;
-    cout<<result<<endl;
+    cout<<"Enter the first String"<<endl;
+        cin.getline(s1,100);
+    // getline(cin,s1);
+    cout<<"Enter the Second String"<<endl;
+    cin.getline(s2,100);
+    strcat(s1,s2);
+    cout<<s1;
+    // getline(cin,s2);
+
+    // result = s1 +s2;
+    // cout<<result<<endl;
     
 
 }
